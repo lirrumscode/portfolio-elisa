@@ -1,0 +1,42 @@
+ion-toolbar {
+  --background: linear-gradient(to right, #fad7a1, #f19272);
+}
+.title-header {
+  font-weight: 900;
+  padding-left: 30px;
+  margin-top: 15px;
+}
+.btn-header {
+  --background: #42e2b8;
+  --background-activated: #42e2b8;
+  --border-color: #0f0a0a;
+  --border-style: solid;
+  float: right;
+  width: 80%;
+  height: 50px;
+  a {
+    text-decoration: none;
+    color: #0f0a0a;
+    span {
+      color: #0f0a0a;
+      font-weight: bold;
+      font-size: 18px;
+      position: relative;
+      top: -2px;
+      left: 0;
+      right: 0;
+      animation: zoominout 3s infinite;
+    }
+  }
+}
+@keyframes zoominout {
+  0% {
+    transform: scale(1, 1);
+  }
+  50% {
+    transform: scale(1.2, 1.2);
+  }
+  100% {
+    transform: scale(1, 1);
+  }
+}
